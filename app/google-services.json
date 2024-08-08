@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "322070436330",
+    "firebase_url": "https://mob21firebase-98572-default-rtdb.firebaseio.com",
+    "project_id": "mob21firebase-98572",
+    "storage_bucket": "mob21firebase-98572.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322070436330:android:6527b461932c057585fa93",
+        "android_client_info": {
+          "package_name": "com.denish.mob21firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeKVCYxj0TaJ5q9A_dw7yOkCoJI9WDduc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "322070436330-oea2r75kcdqnt502e1dq1kkvt06bhvo8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

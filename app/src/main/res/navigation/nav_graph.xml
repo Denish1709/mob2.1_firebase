@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.denish.mob21firebase.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_addTodoFragment"
+            app:destination="@id/addTodoFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_editTodoFragment"
+            app:destination="@id/editTodoFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addTodoFragment"
+        android:name="com.denish.mob21firebase.ui.addEditTodo.add.AddTodoFragment"
+        android:label="fragment_add_todo"
+        tools:layout="@layout/fragment_manage_todo" />
+    <fragment
+        android:id="@+id/editTodoFragment"
+        android:name="com.denish.mob21firebase.ui.addEditTodo.edit.EditTodoFragment"
+        android:label="EditTodoFragment"
+        tools:layout="@layout/fragment_manage_todo">
+        <argument android:name="taskId" app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.denish.mob21firebase.ui.login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.denish.mob21firebase.ui.register.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.denish.mob21firebase.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile"/>
+</navigation>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.home.HomeFragment">
+
+        <ImageView
+            android:id="@+id/ivEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_empty"
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTasks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="@dimen/m"
+            android:paddingVertical="@dimen/xxs"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/s"
+            android:layout_marginEnd="@dimen/s"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/s"
+            android:layout_marginBottom="@dimen/s"
+            android:src="@drawable/ic_add"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
